@@ -1,0 +1,25 @@
+{
+  "name": "Hyppolit",
+  "version": "0.0.0",
+  "description": "Hyppolit, the Butler - A DevOps bot",
+  "homepage": "https://github.com/Yitsushi/Hyppolit",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yitsushi/Hyppolit.git"
+  },
+  "keywords": [
+    "bot",
+    "devops"
+  ],
+  "author": "Balazs Nadasdi <yitsushi@gmail.com>",
+  "license": "GNU GPL v2",
+  "devDependencies": {
+    "should": "~4.1.0",
+    "assert": "~1.1.2",
+    "mocha": "~2.0.1"
+  }
+}
