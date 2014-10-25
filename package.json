@@ -22,7 +22,8 @@
     "assert": "~1.1.2",
     "mocha": "~2.0.1",
     "gulp": "~3.8.9",
-    "gulp-jshint": "~1.8.5"
+    "gulp-jshint": "~1.8.5",
+    "gulp-mocha": "~1.1.1"
   },
   "dependencies": {
     "restify": "~2.8.3",
