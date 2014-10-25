@@ -1,0 +1,16 @@
+{
+  "bot": {
+    "name": "Hyppolit"
+  },
+  "plugins": [
+    {
+      "name": "hipchat",
+      "configuration": {
+        "hostname": "xxxxx.hipchat.com",
+        "jid": "xxxxxxx",
+        "password": "xxxxxx",
+        "autojoin": ["xxxxxxxxx", "xxxxxxx"]
+      }
+    }
+  ]
+}
