@@ -65,8 +65,6 @@ Bot.prototype.onOnline = function() {
 Bot.prototype.onError = function(err) {
   console.log(err);
 };
-Bot.prototype.onStanza = function() {
-};
 
 Bot.prototype.setAvailability = function(availability, status) {
   var packet = new xmpp.Element('presence', { type: 'available' });

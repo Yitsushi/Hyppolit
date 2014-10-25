@@ -1,10 +1,6 @@
-function logger() {
-  console.log.apply(null, ['[' + new Date() + ']', '<HipChat>'].concat(Array.prototype.slice.call(arguments)));
-}
-
 var Bot = require('./bot').Bot;
 
-module.exports = function(configuration, App) {
+module.exports = function(configuration, App, logger) {
   logger("Loaded");
   var mentionRegex = new RegExp('^@' + App.bot.name + '\\b', 'i');
 
@@ -17,7 +13,10 @@ module.exports = function(configuration, App) {
 
   bot.on('connect', function() {
     logger('connected');
-    configuration.autojoin.map(function(channel) { return bot.join(channel + "@" + bot.mucHost); });
+    // Autojoin configured channels
+    configuration.autojoin.map(function(channel) {
+      return bot.join(channel + "@" + bot.mucHost);
+    });
   });
 
   bot.on('privateMessage', function(from, message) {
@@ -49,7 +48,7 @@ module.exports = function(configuration, App) {
     this.join(channel);
   });
 
-  return function(message) {
-    logger(message);
+  return function(action, message, method) {
+    logger(action + ">", message, method);
   };
 };
