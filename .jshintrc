@@ -1,0 +1,20 @@
+{
+  "indent": 2,
+  "trailing": true,
+  "maxparams": 10,
+  "maxdepth": 3,
+  "node": true,
+  "globals": {
+    "process": true,
+    "setTimeout": true,
+    "require": true,
+    "console": true,
+    "module": true,
+    "GLOBAL": true,
+    "describe": true,
+    "before": true,
+    "it": true,
+    "clientSockets": true,
+    "__dirname": true
+  }
+}
