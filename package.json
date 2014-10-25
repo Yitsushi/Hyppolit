@@ -2,7 +2,7 @@
   "name": "Hyppolit",
   "version": "0.0.0",
   "description": "Hyppolit, the Butler - A DevOps bot",
-  "homepage": "https://github.com/Yitsushi/Hyppolit",
+  "homepage": "http://yitsushi.github.io/Hyppolit",
   "main": "index.js",
   "scripts": {
     "test": "node test"

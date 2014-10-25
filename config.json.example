@@ -11,6 +11,13 @@
         "password": "xxxxxx",
         "autojoin": ["xxxxxxxxx", "xxxxxxx"]
       }
-    }
+    },
+    {
+      "name": "bitbucket",
+      "configuration": {
+      }
+    },
+    { "name": "weather" },
+    { "name": "date-time" }
   ]
 }
