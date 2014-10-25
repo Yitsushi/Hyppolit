@@ -23,7 +23,7 @@
     "mocha": "~2.0.1"
   },
   "dependencies": {
-    "moment": "~2.8.3",
-    "restify": "~2.8.3"
+    "restify": "~2.8.3",
+    "moment-timezone": "~0.2.3"
   }
 }

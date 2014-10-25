@@ -1,6 +1,6 @@
 var events = require('events'),
     Event = new events.EventEmitter(),
-    moment = require('moment');
+    moment = require('moment-timezone');
 
 var App = {
   "bot": global.Configuration.bot,
@@ -32,14 +32,6 @@ global.Configuration.plugins.map(function(plugin) {
     }
   );
   return true;
-});
-
-Event.on('what', function(answer, data) {
-  if (data.match(/^time is it/i)) {
-    answer(new Date());
-  } else {
-    answer("Sorry, I don't know!");
-  }
 });
 
 module.exports.App = App;
