@@ -5,7 +5,7 @@
   "homepage": "http://yitsushi.github.io/Hyppolit",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "gulp travis"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
   "devDependencies": {
     "should": "~4.1.0",
     "assert": "~1.1.2",
-    "mocha": "~2.0.1"
+    "mocha": "~2.0.1",
+    "gulp": "~3.8.9",
+    "gulp-jshint": "~1.8.5"
   },
   "dependencies": {
     "restify": "~2.8.3",
