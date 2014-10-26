@@ -37,22 +37,24 @@ He is your personal, team or company butler.</p>
 I wrote a lot of bots before but now it is not only a bot but an awesome support,
 a real butler.</p>
 
-<h3>
-<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use?</h3>
+<h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use?</h2>
 
 <pre><code>$ git clone https://github.com/Yitsushi/Hyppolit.git
 $ cd Hyppolit
 $ npm install
 $ cp config.json.example config.json
+
 ## Edit your config.json
+
 $ node index.js
 </code></pre>
 
-<h3>
-<a name="available-plugins" class="anchor" href="#available-plugins"><span class="octicon octicon-link"></span></a>Available plugins</h3>
+<h2>
+<a name="available-plugins" class="anchor" href="#available-plugins"><span class="octicon octicon-link"></span></a>Available plugins</h2>
 
-<h4>
-<a name="date-time" class="anchor" href="#date-time"><span class="octicon octicon-link"></span></a>date-time</h4>
+<h3>
+<a name="date-time" class="anchor" href="#date-time"><span class="octicon octicon-link"></span></a>date-time</h3>
 
 <ul>
 <li>what time is it</li>
@@ -60,15 +62,35 @@ $ node index.js
 <li>what time is it in America/New York</li>
 </ul>
 
-<h4>
-<a name="hipchat" class="anchor" href="#hipchat"><span class="octicon octicon-link"></span></a>hipchat</h4>
+<h5>
+<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration:</h5>
+
+<pre><code>{ "name": "date-time" }
+</code></pre>
+
+<h3>
+<a name="hipchat" class="anchor" href="#hipchat"><span class="octicon octicon-link"></span></a>hipchat</h3>
 
 <p>Hyppolit connects to your HipChat instance and wait for your questions. If
 you invite him into a channel then he will join immediately. Your can ask him
 in public or in private too.</p>
 
-<h4>
-<a name="weather" class="anchor" href="#weather"><span class="octicon octicon-link"></span></a>weather</h4>
+<h5>
+<a name="configuration-1" class="anchor" href="#configuration-1"><span class="octicon octicon-link"></span></a>Configuration:</h5>
+
+<pre><code>{
+  "name": "hipchat",
+  "configuration": {
+    "hostname": "xxxxx.hipchat.com",
+    "jid": "xxxxxxx",
+    "password": "xxxxxx",
+    "autojoin": ["xxxxxxxxx", "xxxxxxx"]
+  }
+}
+</code></pre>
+
+<h3>
+<a name="weather" class="anchor" href="#weather"><span class="octicon octicon-link"></span></a>weather</h3>
 
 <ul>
 <li>what is the weather</li>
@@ -77,13 +99,54 @@ in public or in private too.</p>
 <li>what's the weather in London</li>
 </ul>
 
+<h5>
+<a name="configuration-2" class="anchor" href="#configuration-2"><span class="octicon octicon-link"></span></a>Configuration:</h5>
+
+<pre><code>{ "name": "weather" }
+</code></pre>
+
 <h3>
-<a name="api-documentation" class="anchor" href="#api-documentation"><span class="octicon octicon-link"></span></a>API? Documentation?</h3>
+<a name="docker" class="anchor" href="#docker"><span class="octicon octicon-link"></span></a>docker</h3>
+
+<ul>
+<li>docker list containers</li>
+<li>docker list running containers</li>
+<li>docker list stopped containers</li>
+<li>docker list all containers</li>
+</ul>
+
+<h5>
+<a name="configuration-3" class="anchor" href="#configuration-3"><span class="octicon octicon-link"></span></a>Configuration:</h5>
+
+<p>With host and port:</p>
+
+<pre><code>{
+  "name": "docker",
+  "configuration": {
+    "type": "host",
+    "address": "tcp://192.168.59.103:2375"
+  }
+}
+</code></pre>
+
+<p>Or with socket:</p>
+
+<pre><code>{
+  "name": "docker",
+  "configuration": {
+    "type": "socket",
+    "address": "/var/run/docker.sock"
+  }
+}
+</code></pre>
+
+<h2>
+<a name="api-documentation" class="anchor" href="#api-documentation"><span class="octicon octicon-link"></span></a>API? Documentation?</h2>
 
 <p>Soon. :)</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h2>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h2>
 
 <ul>
 <li>Balazs Nadasdi (<a href="https://github.com/yitsushi" class="user-mention">@yitsushi</a>)</li>
