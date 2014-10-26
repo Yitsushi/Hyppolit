@@ -3,7 +3,7 @@
 Hyppolit, the Butler is a bot to connect your services and to does what you want.
 He is your personal, team or company butler.
 
-The name comes from a [movie form my country with the same name](http://www.imdb.com/title/tt0021985/) from 1931. It's because
+The name comes from a [movie with the same name from my country](http://www.imdb.com/title/tt0021985/) from 1931. It's because
 I wrote a lot of bots before but now it is not only a bot but an awesome support,
 a real butler.
 
