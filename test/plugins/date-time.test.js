@@ -37,7 +37,7 @@ suite("plugins:date-time", function() {
     );
   });
 
-  test("what time is it in {City with continent}", function(done) {
+  test("specified city with continent (Europe/Budapest)", function(done) {
     var command = 'what',
         message = 'time is it in Europe/Budapest';
 
@@ -51,7 +51,7 @@ suite("plugins:date-time", function() {
     );
   });
 
-  test("what time is it in {City with space in name}", function(done) {
+  test("specified city with space in name (America/New York)", function(done) {
     var command = 'what',
         message = 'time is it in America/New York';
 
@@ -65,7 +65,7 @@ suite("plugins:date-time", function() {
     );
   });
 
-  test("what time is it in {City without continent}", function(done) {
+  test("specified city without continent (London)", function(done) {
     var command = 'what',
         message = 'time is it in London';
 
@@ -79,7 +79,7 @@ suite("plugins:date-time", function() {
     );
   });
 
-  test("what time is it in {City without continent but with space in name}", function(done) {
+  test("specified city without continent but with space in name (New York)", function(done) {
     var command = 'what',
         message = 'time is it in New York';
 
