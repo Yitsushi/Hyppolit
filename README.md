@@ -1,6 +1,6 @@
 # Hyppolit
 
-[![Build Status](https://travis-ci.org/Yitsushi/Hyppolit.svg?branch=master)](https://travis-ci.org/Yitsushi/Hyppolit)
+[![Build Status](https://travis-ci.org/Yitsushi/Hyppolit.svg?branch=master)](https://travis-ci.org/Yitsushi/Hyppolit) [![Dependency Status](https://gemnasium.com/Yitsushi/Hyppolit.svg)](https://gemnasium.com/Yitsushi/Hyppolit)
 
 Hyppolit, the Butler - A DevOps bot
 
