@@ -18,6 +18,13 @@
       }
     },
     { "name": "weather" },
-    { "name": "date-time" }
+    { "name": "date-time" },
+    {
+      "name": "docker",
+      "configuration": {
+        "type": "host",
+        "address": "tcp://192.168.59.103:2375"
+      }
+    }
   ]
 }
