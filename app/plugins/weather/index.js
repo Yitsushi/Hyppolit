@@ -28,6 +28,13 @@ module.exports = function(configuration, App, logger) {
           });
           response.on('end', function () {
             var data = JSON.parse(str);
+
+            if (data.cod == 404) {
+              return answer("Sorry, but I don't know where is " + location + ".");
+            }
+            if (data.cod != 200) {
+              return answer(data.message);
+            }
             return answer(
               "Now in " + data.name + " (" + data.sys.country + "):\n" +
               data.weather[0].main + ", " + data.weather[0].description + "\n" +
